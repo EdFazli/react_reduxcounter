@@ -6,14 +6,12 @@ import counter from "./reducer";
 import App from "./App";
 import "./index.css";
 
-var destination = document.querySelector("#container")
+var destination = document.querySelector("#container");
 var store = createStore(counter);
 
 ReactDOM.render(
-    <div>
         <Provider store={store}>
             <App />
         </Provider>,
         destination
-    </div>
 );
